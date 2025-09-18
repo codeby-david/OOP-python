@@ -32,4 +32,15 @@ class Dog(Animal):  # Inheritance
 dog = Dog()
 dog.speak()  # Dog barks
 
+#Method Overidding-Same method name in parent & child, but child changes behavior.
+class Parent:
+    def greet(self):
+        print("Hello from Parent")
+
+class Child(Parent):
+    def greet(self):
+        print("Hello from Child")
+
+obj = Child()
+obj.greet()  # Hello from Child
 
